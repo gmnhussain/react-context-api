@@ -1,0 +1,177 @@
+// custom fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// variables
+:root {
+  --theme-color: #1f7ef9;
+  --main-color: #1f7ef9; // main theme color
+  --txt11: #2e3031; // bold text
+  --txt12: #666666; // normal text
+  --txt13: #9eabbe; // light text
+
+  --bg11: #ffffff; // main bg
+  --bg12: #f4f4f4; // main bg rev
+  --bg21: #444444;
+  --bg22: #eeeeee; // icon bg
+  --bdr11: #e8e8ea;
+  --bdr12: #e8e8ea;
+  --bdr13: #cfcfcf;
+  --bdr14: #eff1f2;
+  --bs11: 0 5px 30px rgba(0, 0, 0, 0.2); // card shadow 1
+  --bs21: 0 2px 4px -2px rgba(0, 0, 0, 0.06); // header, footer etc.
+  --scrollbar-thumb: #a8a8a8;
+}
+
+.dark {
+  --bg11: #232a3b;
+  --bg12: #293145;
+  --bg21: #25262c;
+  --txt11: rgba(226, 232, 240, 1);
+  --txt12: #ffffff;
+  --bdr11: #313a55;
+  --bdr12: #313a55;
+  --bs11: 0px 3px 15px #293145;
+  --cbg: #33363c;
+  --snib: #888888;
+  --snbs: #737c84;
+}
+
+/*------- utility CSS -------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100% !important;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  line-height: unset;
+  font-size: unset;
+}
+
+ul,
+li {
+  margin: 0;
+  list-style-type: none;
+}
+
+a,
+a:focus,
+a:hover {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  border: none;
+  display: block;
+  pointer-events: none;
+}
+
+input,
+textarea,
+label {
+  display: block;
+  outline: none;
+  border: none;
+  margin: 0;
+  background: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+iframe {
+  border: none;
+}
+
+// core css
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--txt11);
+  background: var(--bg11);
+}
+
+// main css
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+.home a {
+  color: #000;
+  font-weight: bold;
+  padding: 5px 0;
+  transition: color 250ms ease-in-out;
+}
+.home a:hover {
+  color: #1f7ef9;
+}
+
+.content {
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.block {
+  display: block;
+  padding: 70px 20px 20px 20px;
+  border: 1px dashed #999;
+  position: relative;
+  color: #444;
+}
+
+.name {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: red;
+}
+.count {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.btn {
+  width: 100px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin-right: 20px;
+  display: inline-block;
+}
